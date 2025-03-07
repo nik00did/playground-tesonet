@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "test/__mocks__"]
+  "include": ["src", "global.d.ts", "test/__mocks__"]
 }

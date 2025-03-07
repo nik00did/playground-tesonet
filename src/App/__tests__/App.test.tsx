@@ -3,7 +3,8 @@ import App from "../App";
 
 describe("App component", () => {
   test("should render successfully", () => {
-      render(<App />);
-      expect(true).toBe(true)
+    const renderedApp = render(<App />);
+
+    expect(renderedApp.container).toBeTruthy();
   });
 });

@@ -8,5 +8,6 @@ export default {
         '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__ mocks __/files.ts',
         "\\.(css|less)$": "<rootDir>/test/__mocks__/styles.ts",
     },
-    // setupFiles: ['<rootDir>/test/__ mocks __/client.ts']
+    modulePathIgnorePatterns: ["__mocks__"],
+    setupFiles: ['./test/__mocks__/global.ts']
 }
