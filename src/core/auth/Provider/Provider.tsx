@@ -4,7 +4,7 @@ import Context from "../Context";
 import { Props } from "./types";
 import { ROUTERS, TOKEN_KEY } from "../../constants";
 import { LoginParams } from "../types";
-import { authorizeRequest } from "../utils";
+import API from "../../api";
 
 const Provider: React.FC<Props> = (props) => {
   const [token, setToken] = useState(localStorage.getItem(TOKEN_KEY) || "");
@@ -12,7 +12,7 @@ const Provider: React.FC<Props> = (props) => {
 
   const login = async (params: LoginParams) => {
     try {
-      const response = await authorizeRequest(params);
+      const response = await API.authorizeRequest(params);
       const res = await response.json();
 
       if (!res.token) {

@@ -5,7 +5,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import DefaultRoute from "./components/DefaultRoute";
 
 const Login = lazy(() => import("../Pages/Login"));
-const ServerList = lazy(() => import("../Pages/ServerList"));
+const ServerListPage = lazy(() => import("../Pages/ServerListPage"));
 
 const Router = () => {
   return (
@@ -13,7 +13,7 @@ const Router = () => {
       <Route path="*" element={<DefaultRoute />}></Route>
       <Route path={ROUTERS.login} element={<Login />} />
       <Route element={<PrivateRoute />}>
-        <Route path={ROUTERS.serverList} element={<ServerList />} />
+        <Route path={ROUTERS.serverList} element={<ServerListPage />} />
       </Route>
     </Routes>
   );
