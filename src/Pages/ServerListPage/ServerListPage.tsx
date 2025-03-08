@@ -1,4 +1,4 @@
-import { StoreProvider } from "../../core/globalState";
+import { StoreProvider } from "core/globalState";
 import Layout from "./components/Layout";
 
 const ServerListPage: React.FC = () => {

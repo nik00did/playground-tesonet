@@ -1,4 +1,4 @@
-import { useAuth } from "../../core/auth";
+import { useAuth } from "core/auth";
 
 const Login: React.FC = () => {
   const auth = useAuth();

@@ -1,9 +1,9 @@
 import { render } from "@testing-library/react";
-import * as auth from "../../../core/auth";
+import * as auth from "core/auth";
 import Login from "../Login";
 import { mockContext } from "./__mocks__";
 
-jest.mock("../../../core/auth", () => ({
+jest.mock("core/auth", () => ({
   useAuth: jest.fn(),
 }));
 

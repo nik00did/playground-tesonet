@@ -1,6 +1,6 @@
 import { lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-import { ROUTERS } from "../core/constants";
+import { ROUTERS } from "core/constants";
 import PrivateRoute from "./components/PrivateRoute";
 import DefaultRoute from "./components/DefaultRoute";
 

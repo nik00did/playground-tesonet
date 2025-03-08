@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { ACTIONS, useDispatch } from "../../../../core/globalState";
-import { useAuth } from "../../../../core/auth";
+import { ACTIONS, useDispatch } from "core/globalState";
+import { useAuth } from "core/auth";
 
 const Layout: React.FC = () => {
   const auth = useAuth();

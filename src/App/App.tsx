@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import Router from "../Router";
-import { AuthProvider } from "../core/auth";
+import { AuthProvider } from "core/auth";
 import "./App.css";
 
 const App: React.FC = () => {

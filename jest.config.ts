@@ -7,6 +7,7 @@ export default {
     moduleNameMapper: {
         '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__ mocks __/files.ts',
         "\\.(css|less)$": "<rootDir>/test/__mocks__/styles.ts",
+        'core/(.*)': '<rootDir>/src/core/$1'
     },
     modulePathIgnorePatterns: ["__mocks__"],
     setupFiles: ['./test/__mocks__/global.ts']
