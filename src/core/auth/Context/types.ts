@@ -1,7 +1,7 @@
-import { LoginParams } from "../types";
+import { LoginParams } from "../types"
 
 export type Context = {
-    token: string;
-    login: (params: LoginParams) => void;
-    logout: () => void;
-};
+  token: string
+  login: (params: LoginParams) => void
+  logout: () => void
+}

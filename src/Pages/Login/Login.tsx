@@ -1,10 +1,10 @@
-import { useAuth } from "core/auth";
+import { useAuth } from "core/auth"
 
 const Login: React.FC = () => {
-  const auth = useAuth();
+  const auth = useAuth()
 
   if (!auth) {
-    return <>no auth data</>;
+    return <>no auth data</>
   }
 
   return (
@@ -17,7 +17,7 @@ const Login: React.FC = () => {
         Login
       </button>
     </>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login

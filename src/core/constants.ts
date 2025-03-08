@@ -1,6 +1,6 @@
 export enum ROUTERS {
-    login = '/login',
-    serverList = '/server-list'
+  login = '/login',
+  serverList = '/server-list',
 }
 
 export const TOKEN_KEY = 'token'

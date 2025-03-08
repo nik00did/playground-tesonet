@@ -4,8 +4,8 @@ import { reducer as requestedDataReducer } from './managers/requestedData'
 
 const store = configureStore({
   reducer: {
-    requestedData: requestedDataReducer
+    requestedData: requestedDataReducer,
   },
-});
+})
 
 export default store

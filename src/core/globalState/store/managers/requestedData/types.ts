@@ -1,6 +1,5 @@
-import { ServerList } from "../../../../types";
+import { ServerList } from '../../../../types'
 
 export interface RequestedDataState {
-    serverList: ServerList
+  serverList: ServerList
 }
-  
