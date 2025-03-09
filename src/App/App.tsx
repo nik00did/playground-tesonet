@@ -1,7 +1,7 @@
-import { BrowserRouter } from "react-router-dom";
-import Router from "../Router";
-import { AuthProvider } from "core/auth";
-import "./App.css";
+import { BrowserRouter } from 'react-router-dom'
+import Router from './components/Router'
+import { AuthProvider } from 'core/auth'
+import './App.css'
 
 const App: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const App: React.FC = () => {
         <Router />
       </AuthProvider>
     </BrowserRouter>
-  );
-};
+  )
+}
 
-export default App;
+export default App

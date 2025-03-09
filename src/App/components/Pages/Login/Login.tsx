@@ -1,4 +1,4 @@
-import { useAuth } from "core/auth"
+import { useAuth } from 'core/auth'
 
 const Login: React.FC = () => {
   const auth = useAuth()
@@ -11,7 +11,7 @@ const Login: React.FC = () => {
     <>
       <button
         onClick={() =>
-          auth.login({ username: "tesonet", password: "partyanimal" })
+          auth.login({ username: 'tesonet', password: 'partyanimal' })
         }
       >
         Login
