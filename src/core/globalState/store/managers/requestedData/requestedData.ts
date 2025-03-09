@@ -15,9 +15,9 @@ const requestedDataSlice = createSlice({
   },
   extraReducers(builder) {
     builder
-      .addCase(requestServerList.pending, (state) => {
-        console.log('pending')
-      })
+      // .addCase(requestServerList.pending, (state) => {
+      //   console.log('pending')
+      // })
       .addCase(
         requestServerList.fulfilled,
         (state, action: PayloadAction<ServerList>) => {
@@ -25,9 +25,9 @@ const requestedDataSlice = createSlice({
           state.serverList = action.payload
         }
       )
-      .addCase(requestServerList.rejected, (state) => {
-        console.log('rejected')
-      })
+    // .addCase(requestServerList.rejected, (state) => {
+    //   console.log('rejected')
+    // })
   },
 })
 

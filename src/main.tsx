@@ -1,3 +1,3 @@
-import init from "core/init";
+import init from 'core/init'
 
-init();
+init()

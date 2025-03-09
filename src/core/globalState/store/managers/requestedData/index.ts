@@ -1,5 +1,6 @@
 import requestedDataSlice from './requestedData'
 import { requestServerList } from './thunk'
+export * as selectors from './selectors'
 
 export const { reducer } = requestedDataSlice
 

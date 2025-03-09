@@ -1,13 +1,18 @@
 import { useDispatch as useDispatchRedux } from 'react-redux'
-import { actions as requestDataActions } from './managers/requestedData'
+import {
+  actions as requestDataActions,
+  selectors as requestDataSelectors,
+} from './managers/requestedData'
 import store from './store'
 
 export const ACTIONS = {
-    ...requestDataActions
+  ...requestDataActions,
+}
+
+export const SELECTORS = {
+  ...requestDataSelectors,
 }
 
 export const useDispatch = () => useDispatchRedux<typeof store.dispatch>()
 
 export default store
-
-

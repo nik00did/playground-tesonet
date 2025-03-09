@@ -1,6 +1,9 @@
-import { useEffect } from 'react'
-import { ACTIONS, useDispatch } from 'core/globalState'
+import React, { useEffect } from 'react'
+import PageLayout from 'uiKit/PageLayout'
 import { useAuth } from 'core/auth'
+import { ACTIONS, useDispatch } from 'core/globalState'
+import Header from './components/Header'
+import ServerList from './components/ServerList'
 
 const Layout: React.FC = () => {
   const auth = useAuth()
@@ -19,11 +22,14 @@ const Layout: React.FC = () => {
   }, [auth, dispatch])
 
   return (
-    <>
-      <p>Server List</p>
-      <button onClick={() => auth?.logout()}>logout</button>
-    </>
+    <PageLayout header={<Header />}>
+      <div className="mx-auto flex flex-col justify-center">
+        <div className="h-full w-lg rounded bg-white px-10 py-14 shadow-md">
+          <ServerList />
+        </div>
+      </div>
+    </PageLayout>
   )
 }
 
-export default Layout
+export default React.memo(Layout)

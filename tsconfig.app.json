@@ -24,7 +24,9 @@
       "src/*": [ "./src/*" ],
       "core/*": [ "./src/core/*" ],
       "core": [ "./src/core" ],
+      "uiKit/*": [ "./src/uiKit/*" ],
+      "uiKit": [ "./src/uiKit" ],
     }
   },
-  "include": ["src", "global.d.ts", "test/__mocks__"]
+  "include": ["src", "src/core", "src/uiKit", "global.d.ts", "test/__mocks__"]
 }

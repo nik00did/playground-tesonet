@@ -11,6 +11,8 @@
       "src/*": [ "./src/*" ],
       "core/*": [ "./src/core/*" ],
       "core": [ "./src/core" ],
+      "uiKit/*": [ "./src/uiKit/*" ],
+      "uiKit": [ "./src/uiKit" ],
     }
   }
 }

@@ -4,7 +4,7 @@ import { ROUTERS } from 'core/constants'
 import PrivateRoute from './components/PrivateRoute'
 import DefaultRoute from './components/DefaultRoute'
 
-const Login = lazy(() => import('../Pages/Login'))
+const Login = lazy(() => import('../Pages/LoginPage'))
 const ServerListPage = lazy(() => import('../Pages/ServerListPage'))
 
 const Router = () => {
