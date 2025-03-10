@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '../../types'
 import type { ServerList } from 'core/types'
