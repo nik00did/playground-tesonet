@@ -1,5 +1,7 @@
+import { FormEvent } from "react"
+
 export type Props = {
-  action: () => void
+  onSubmit: (event: FormEvent<HTMLFormElement>) => void
   children: React.ReactNode
   title?: string
 }

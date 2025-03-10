@@ -20,7 +20,6 @@ const requestedDataSlice = createSlice({
       .addCase(
         requestServerList.fulfilled,
         (state, action: PayloadAction<ServerList>) => {
-          console.log('fulfilled', state, action.payload)
           state.serverList = action.payload
         }
       )

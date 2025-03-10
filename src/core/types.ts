@@ -10,6 +10,11 @@ export enum SORTING_FIELD {
   distance = 'distance',
 }
 
+export enum LOGIN_FIELDS {
+  username = 'Username',
+  password = 'Password'
+}
+
 export type Server = {
   name: string
   distance: string
