@@ -5,12 +5,16 @@ import Input from 'uiKit/Input'
 import { useAuth } from 'core/auth'
 import { useForm } from 'core/form'
 import { LOGIN_FIELDS } from 'src/core/types'
+import Alert from '../Alert'
+import { ERROR_MESSAGES } from 'src/core/auth/constants'
 
 const Content: React.FC = () => {
   const auth = useAuth()
 
   const handleSubmit = useCallback(
     (formData: FormData) => {
+      auth?.clearError()
+
       const username = formData.get(LOGIN_FIELDS.username) as string
       const password = formData.get(LOGIN_FIELDS.password) as string
 
@@ -18,6 +22,10 @@ const Content: React.FC = () => {
     },
     [auth]
   )
+
+  const errorMessage =
+    auth?.error?.message &&
+    (ERROR_MESSAGES[auth.error.message] || 'Ooops! Something went wrong')
 
   const { onSubmit } = useForm({ onSubmit: handleSubmit })
 
@@ -40,8 +48,13 @@ const Content: React.FC = () => {
           </h2>
         </div>
         <Form onSubmit={onSubmit}>
-          <Input label={LOGIN_FIELDS.username}></Input>
-          <Input label={LOGIN_FIELDS.password} type="password"></Input>
+          {errorMessage && <Alert message={errorMessage} />}
+          <Input label={LOGIN_FIELDS.username} isRequired></Input>
+          <Input
+            label={LOGIN_FIELDS.password}
+            type="password"
+            isRequired
+          ></Input>
           <div>
             <Button type="submit" label="Sign in"></Button>
           </div>
