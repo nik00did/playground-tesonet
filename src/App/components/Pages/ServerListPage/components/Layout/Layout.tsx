@@ -23,8 +23,8 @@ const Layout: React.FC = () => {
 
   return (
     <PageLayout header={<Header />}>
-      <div className="mx-auto flex flex-col justify-center">
-        <div className="h-full w-lg rounded bg-white px-10 py-14 shadow-md">
+      <div className="w-full sm:w-auto mx-auto flex flex-col justify-center">
+        <div className="w-full h-full sm:w-lg sm:rounded bg-white px-6 py-4 sm:px-10 sm:py-14 shadow-md">
           <ServerList />
         </div>
       </div>

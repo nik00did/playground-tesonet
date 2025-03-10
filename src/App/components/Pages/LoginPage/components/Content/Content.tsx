@@ -22,10 +22,14 @@ const Content: React.FC = () => {
   const { onSubmit } = useForm({ onSubmit: handleSubmit })
 
   return (
-    <div className="mx-auto flex flex-col justify-center">
-      <div className="h-auto w-lg rounded bg-white px-10 py-14 shadow-md">
+    <div className="w-full flex flex-col justify-center">
+      <div
+        className="w-full h-full mx-auto sm:w-lg 
+        sm:h-auto rounded bg-white px-10 py-14
+        shadow-md flex flex-col justify-center"
+      >
         <div
-          className="flex-col justify-center sm:mx-auto sm:w-full
+          className="flex-col justify-center items-center sm:mx-auto sm:w-full
            sm:max-w-sm"
         >
           <h2
